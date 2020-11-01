@@ -1,25 +1,48 @@
-import logo from './logo.svg';
+// import MyNavbar from './components/MyNavbar';
+import Home from './components/Home';
+import Imagegallery from './components/Imagegallery';
+import Light from './components/Lightbox';
+import Links from './components/Links';
+import images from './components/images_data';
+import gallery from './components/gallery_data';
 import './App.css';
 
-function App() {
+import {
+  BrowserRouter as Router,
+  Switch, Route, Link
+} from "react-router-dom"
+
+const App = () => {
+
+  const padding = {
+    padding: 5
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <div className="navbar">
+        <Link style={padding} to="/">AHONIITTY</Link>
+        <Link style={padding} to="/gallery">Images</Link>
+        <Link style={padding} to="/links">Other</Link>
+      </div>
+
+      <Switch>
+        <Route path="/gallery">
+        {/* <Imagegallery gallery={gallery} /> */}
+        </Route>
+        <Route path="/links">
+        <Links />
+        </Route>
+        <Route path="/">
+          <Home images={images} />
+        </Route>
+      </Switch>
+
+      <div className="footer">
+        <i>Susanna Maria M. (c) 2020</i>
+      </div>
+    </Router>
+  )
 }
 
 export default App;
