@@ -95,7 +95,7 @@ const Home = ({ images }) => {
                         <Card.Text>
                             This is school work, where I practiced Grid-layout.
                             
-      </Card.Text><Button variant="primary"><a style={padding} href="ahoniitty.github.io/ravintola/lapintaika.html">Visit My Grid Project</a></Button>
+      </Card.Text><Button variant="primary"><a style={padding} href="https://ahoniitty.github.io/ravintola/lapintaika.html">Visit My Grid Project</a></Button>
                     </Card.Body>
                     <Card.Footer>
                         <small className="text-muted">Last updated 2019</small>
