@@ -36,7 +36,7 @@
     transform: rotate(360deg);
   }
 }
-.navbar{
+.nav{
   background-color: #343028;
 }
 .push{
@@ -47,4 +47,7 @@
 }
 .footer{
   background-color: #72716f;
+}
+.Link{
+  color: aliceblue;
 }

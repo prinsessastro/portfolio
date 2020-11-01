@@ -1,10 +1,7 @@
 // import MyNavbar from './components/MyNavbar';
 import Home from './components/Home';
-import Imagegallery from './components/Imagegallery';
-import Light from './components/Lightbox';
 import Links from './components/Links';
 import images from './components/images_data';
-import gallery from './components/gallery_data';
 import './App.css';
 
 import {
@@ -15,21 +12,18 @@ import {
 const App = () => {
 
   const padding = {
-    padding: 5
+    padding: 15,
+    color: "white"
   }
 
   return (
     <Router>
-      <div className="navbar">
+      <div className="nav">
         <Link style={padding} to="/">AHONIITTY</Link>
-        <Link style={padding} to="/gallery">Images</Link>
-        <Link style={padding} to="/links">Other</Link>
+        <Link style={padding} to="/links">Outer Orbit</Link>
       </div>
 
       <Switch>
-        <Route path="/gallery">
-        {/* <Imagegallery gallery={gallery} /> */}
-        </Route>
         <Route path="/links">
         <Links />
         </Route>

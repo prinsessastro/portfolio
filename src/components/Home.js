@@ -11,6 +11,10 @@ const Home = ({ images }) => {
     const margin = {
         margin: 15
       }
+      const padding = {
+        padding: 5,
+        color: "white"
+      }
     
 
     return (
@@ -91,7 +95,7 @@ const Home = ({ images }) => {
                         <Card.Text>
                             This is school work, where I practiced Grid-layout.
                             
-      </Card.Text><Button variant="primary">Go somewhere</Button>
+      </Card.Text><Button variant="primary"><a style={padding} href="ahoniitty.github.io/ravintola/lapintaika.html">Visit My Grid Project</a></Button>
                     </Card.Body>
                     <Card.Footer>
                         <small className="text-muted">Last updated 2019</small>
@@ -105,7 +109,7 @@ const Home = ({ images }) => {
                         <Card.Text>
                             This card has supporting text below as a natural lead-in to additional
         content.
-                        </Card.Text><Button variant="primary">Go somewhere</Button>
+                        </Card.Text><Button variant="primary"><a style={padding} href="https://ahoniitty.github.io/monhunrun/index.html">Visit My Animation</a></Button>
                     </Card.Body>
                     <Card.Footer>
                         <small className="text-muted">Last updated 2019</small>
@@ -119,7 +123,7 @@ const Home = ({ images }) => {
                         <Card.Text>
                             Fanshop (of my own) products.
                             
-      </Card.Text><Button variant="primary">Go somewhere</Button>
+      </Card.Text><Button variant="primary"><a style={padding} href="https://prinsessastro.github.io/build/index.html">Visit My React Project</a></Button>
                     </Card.Body>
                     <Card.Footer>
                         <small className="text-muted">Last updated 2020</small>
